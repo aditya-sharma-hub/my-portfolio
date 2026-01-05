@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Sharma | Data Scientist</title>
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h2 class="loader-text">Aditya Sharma</h2>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div id="scroll-progress"></div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Particle Background -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Aditya.</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="recruiter-mode-toggle" class="theme-toggle" title="Recruiter Mode">
+                    <i class="fas fa-briefcase"></i>
+                </button>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image-wrapper">
+                <img src="resume.jpg" alt="Aditya Sharma" class="hero-image">
+            </div>
+            <h1 class="hero-title">Hi, I'm <span>Aditya Sharma</span></h1>
+            <div class="hero-subtitle-container">
+                <span id="typing-text" class="hero-subtitle typing-text"></span>
+            </div>
+            <p class="hero-description">
+                Transforming data into actionable insights and building intelligent solutions that drive business
+                growth.
+                Specializing in machine learning, data analysis, and AI-powered applications.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+            <div class="hire-me-cta">
+                <p>Looking for Data Science Internships / Entry-Level Roles (2026)</p>
+                <span>Open to analytics, ML, and BI opportunities.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Holographic Redesign) -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-heading="ABOUT">Profile</h2>
+            <div class="about-grid">
+                <!-- Left: Holographic Image -->
+                <div class="about-image-container">
+                    <div class="hologram-effect">
+                        <img src="resume.jpg" alt="Aditya Sharma" class="about-img">
+                        <div class="hologram-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="about-content">
+                    <h3 class="holo-subtitle">System Status: <span class="status-online">ONLINE</span></h3>
+                    <p class="about-text">
+                        I’m a Data Science student with hands-on experience in AIML and
+                        business analytics, focused on turning data into actionable insights.
+                    </p>
+
+                    <div class="stats-grid">
+                        <div class="glass-stat card-3d">
+                            <i class="fas fa-clock stat-icon"></i>
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                        <div class="glass-stat card-3d">
+                            <i class="fas fa-code-branch stat-icon"></i>
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="glass-stat card-3d">
+                            <i class="fas fa-certificate stat-icon"></i>
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="Aditya_Sharma_Resume.pdf" download class="btn btn-primary glow-btn">
+                            <i class="fas fa-download"></i> Initialize Download
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <!-- Tech Stack Section (Redesigned) -->
+    <section id="skills" class="section" style="background: var(--bg-color);">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <div class="tech-grid">
+                <!-- Languages -->
+                <div class="tech-card" data-tilt>
+                    <div class="tech-header">
+                        <i class="fas fa-code tech-icon"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-chip">Python</div>
+                        <div class="tech-chip">SQL</div>
+                        <div class="tech-chip">C</div>
+                        <div class="tech-chip">Java</div>
+                        <div class="tech-chip">C++</div>
+                        <div class="tech-chip">Shell</div>
+                    </div>
+                </div>
+
+                <!-- Machine Learning -->
+                <div class="tech-card" data-tilt>
+                    <div class="tech-header">
+                        <i class="fas fa-brain tech-icon"></i>
+                        <h3>Machine Learning</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-chip">Scikit-learn</div>
+                        <div class="tech-chip">TensorFlow</div>
+                        <div class="tech-chip">PyTorch</div>
+                        <div class="tech-chip">Neural Networks</div>
+                        <div class="tech-chip">Random Forest</div>
+                    </div>
+                </div>
+
+                <!-- Data Analysis -->
+                <div class="tech-card" data-tilt>
+                    <div class="tech-header">
+                        <i class="fas fa-chart-line tech-icon"></i>
+                        <h3>Data Analysis</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-chip">Pandas</div>
+                        <div class="tech-chip">NumPy</div>
+                        <div class="tech-chip">Matplotlib</div>
+                        <div class="tech-chip">Seaborn</div>
+                        <div class="tech-chip">Plotly</div>
+                        <div class="tech-chip">Tableau</div>
+                        <div class="tech-chip">Power BI</div>
+                        <div class="tech-chip">Excel</div>
+                    </div>
+                </div>
+
+                <!-- Tools & DB -->
+                <div class="tech-card" data-tilt>
+                    <div class="tech-header">
+                        <i class="fas fa-tools tech-icon"></i>
+                        <h3>Tools & DB</h3>
+                    </div>
+                    <div class="tech-list">
+                        <div class="tech-chip">MySQL</div>
+                        <div class="tech-chip">PostgreSQL</div>
+                        <div class="tech-chip">MongoDB</div>
+                        <div class="tech-chip">Git</div>
+                        <div class="tech-chip">Docker</div>
+                        <div class="tech-chip">Linux</div>
+                        <div class="tech-chip">VS Code</div>
+                        <div class="tech-chip">Jupyter</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education Section (Neon Timeline Redesign) -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title" data-heading="JOURNEY">The Path</h2>
+            <div class="neon-timeline">
+                <div class="timeline-line"></div>
+
+                <!-- Item 1 -->
+                <div class="timeline-row left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card-3d">
+                        <div class="card-header">
+                            <span class="date-badge">2025</span>
+                            <h3>Data Science Intern</h3>
+                        </div>
+                        <h4 class="company-name">Canon India Pvt. Ltd</h4>
+                        <ul class="job-details">
+                            <li>Orchestrated predictive models achieving ~99.7% accuracy.</li>
+                            <li>Engineered interactive Power BI dashboards for real-time analytics.</li>
+                            <li>Synergized with cross-functional teams for data-driven strategy.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-row right">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card-3d education-card">
+                        <div class="card-header">
+                            <span class="date-badge">2023 - Present</span>
+                            <h3>B.Tech CSE</h3>
+                        </div>
+                        <h4 class="company-name">IP University</h4>
+                        <p class="job-details">Majoring in Computer Science & Engineering and specializing in Data Science . </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-row left">
+                    <div class="timeline-node"></div>
+                    <div class="timeline-card card-3d education-card">
+                        <div class="card-header">
+                            <span class="date-badge">2021 - 2022</span>
+                            <h3>Higher Secondary</h3>
+                        </div>
+                        <h4 class="company-name">Indraprastha International School</h4>
+                        <p class="job-details">Foundation in Science & Mathematics with distinction (85%).</p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Featured Work</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Life Expectancy Analysis</h3>
+                        <p class="project-desc">Comprehensive analysis of global life expectancy trends using WHO data
+                            with ML models to predict life expectancy.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Python</span>
+                            <span class="pill">Scikit-learn</span>
+                            <span class="pill">Seaborn</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/Life-Expectancy-Analysis" target="_blank"
+                                class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project1"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Coca Cola Stock Analysis</h3>
+                        <p class="project-desc">Advanced stock price forecasting using LSTM and technical indicators for
+                            investment insights.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">LSTM</span>
+                            <span class="pill">Time Series</span>
+                            <span class="pill">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/Coca-Cola-Analysis" target="_blank"
+                                class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project2"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Laptop Price Analysis</h3>
+                        <p class="project-desc">Analysis of laptop pricing trends and feature impact using regression
+                            models to predict prices based on specs.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Regression</span>
+                            <span class="pill">Feature Eng.</span>
+                            <span class="pill">Pandas</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/Laptop-Price-Analysis" target="_blank"
+                                class="btn btn-outline" style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project3"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Data Science Job Salaries -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">DS Job Salaries Analysis</h3>
+                        <p class="project-desc">In-depth analysis of data science job market trends, salary predictions,
+                            and career insights.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Plotly</span>
+                            <span class="pill">Statistical Analysis</span>
+                            <span class="pill">Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/Data-Science-Job-Salaries-Analysis"
+                                target="_blank" class="btn btn-outline"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project4"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Supermarket -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Supermarket Sales Analysis</h3>
+                        <p class="project-desc">Retail analytics project analyzing sales patterns and customer behavior
+                            for business insights.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Business Intelligence</span>
+                            <span class="pill">Retail Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/Supermarket-Sales-Data-Analysis"
+                                target="_blank" class="btn btn-outline"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project5"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: TCS Stock -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">TCS Stock Prediction</h3>
+                        <p class="project-desc">Real-time analysis of TCS stock data with live updates, trend analysis,
+                            and predictive modeling.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Live Data</span>
+                            <span class="pill">Time Series</span>
+                            <span class="pill">LSTM</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/TCS-Stock-Data-Live-and-Latest"
+                                target="_blank" class="btn btn-outline"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project6"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7: AI Sales -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">AI Sales Prediction</h3>
+                        <p class="project-desc">Power BI-based Sales Analytics Dashboard analyzing historical data to
+                            forecast future sales and revenue.</p>
+                        <div class="pill-container" style="margin-bottom: 1.5rem;">
+                            <span class="pill">Power BI</span>
+                            <span class="pill">Prophet Model</span>
+                            <span class="pill">Forecasting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/aditya-sharma-hub/AI-Sales-Prediction-and-Analysis"
+                                target="_blank" class="btn btn-outline"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fab fa-github"></i> Code
+                            </a>
+                            <button class="btn btn-primary details-btn" data-project="project7"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section (Glass Grid Redesign) -->
+    <section id="certifications" class="section" style="padding: 2rem 0; background: var(--nav-bg);">
+        <div class="container">
+            <h2 class="section-title" data-heading="ACHIEVEMENTS">Credentials</h2>
+            <div class="cert-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-award"></i></div>
+                    <div class="cert-info">
+                        <h3>Data Science</h3>
+                        <p>Scalar</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 2 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-university"></i></div>
+                    <div class="cert-info">
+                        <h3>DS Training</h3>
+                        <p>Corizo</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 3 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-robot"></i></div>
+                    <div class="cert-info">
+                        <h3>Generative AI</h3>
+                        <p>Next Wave</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 4 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-chart-pie"></i></div>
+                    <div class="cert-info">
+                        <h3>Tableau</h3>
+                        <p>Teachnook</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 5 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-cloud"></i></div>
+                    <div class="cert-info">
+                        <h3>Azure Web Apps</h3>
+                        <p>Microsoft</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 6 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fas fa-server"></i></div>
+                    <div class="cert-info">
+                        <h3>DevOps</h3>
+                        <p>Industry Std.</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+                <!-- Cert 7 -->
+                <div class="cert-card card-3d">
+                    <div class="cert-icon"><i class="fab fa-python"></i></div>
+                    <div class="cert-info">
+                        <h3>Python Bootcamp</h3>
+                        <p>Udemy</p>
+                    </div>
+                    <div class="cert-shine"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container contact-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem; font-size: 1.1rem;">
+                I'm always excited to discuss new opportunities, collaborate on interesting projects,
+                or simply chat about data science and AI.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:adityasharmand@gmail.com" class="contact-card"
+                    style="text-decoration: none; color: inherit;">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-color);">Email</h4>
+                        <span style="color: var(--text-muted);">adityasharmand@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://linkedin.com/in/aditya-sharma-2a9b94287" target="_blank" class="contact-card"
+                    style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-linkedin contact-icon"></i>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-color);">LinkedIn</h4>
+                        <span style="color: var(--text-muted);">Connect with me</span>
+                    </div>
+                </a>
+                <a href="https://github.com/aditya-sharma-hub" target="_blank" class="contact-card"
+                    style="text-decoration: none; color: inherit;">
+                    <i class="fab fa-github contact-icon"></i>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; color: var(--text-color);">GitHub</h4>
+                        <span style="color: var(--text-muted);">View my code</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p> </p>
+            <p> </p>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+    <!-- Project 1 Modal -->
+    <div id="modal-project1" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Life Expectancy Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Governments and health organizations struggle to identify which socio-economic and 
+                        health factors most strongly impact life expectancy across countries.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Cleaned and analyzed WHO global health dataset across multiple countries and years</li>
+                        <li>Performed feature selection to isolate economic, health, and education indicators.</li>
+                        <li>Trained and evaluated multiple regression models to predict life expectancy</li>
+                        <li>Compared baseline statistical models with machine learning approaches.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>Random Forest R² Score: 0.923</li>
+                        <li>RMSE: 3.2 years</li>
+                        <li>Cross-validation accuracy: 91.5%</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Highlights</h3>
+                    <ul class="modal-list">
+                        <li>Analyzed data from 193 countries (2000-2015).</li>
+                        <li>Identified adult mortality and schooling as top predictors.</li>
+                        <li>Achieved 92.3% accuracy in predictions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div id="modal-project2" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Coca Cola Stock Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Forecasting stock prices for investment decisions. This project uses LSTM and technical
+                        indicators to predict Coca Cola's future stock value.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Used 10+ years of historical data.</li>
+                        <li>Technical analysis (RSI, MACD, Bollinger Bands).</li>
+                        <li>LSTM neural networks for sequence prediction.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>LSTM Accuracy: 94.2%</li>
+                        <li>Sharpe Ratio: 1.34</li>
+                        <li>Automated signals success: 78%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div id="modal-project3" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Laptop Price Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Estimating laptop prices based on specs in a competitive market. A regression model to assist
+                        consumers and retailers.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Data collection from e-commerce platforms.</li>
+                        <li>Feature engineering (Brand, RAM, CPU).</li>
+                        <li>Ensemble methods (Random Forest, Gradient Boosting).</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>Gradient Boosting R²: 0.925</li>
+                        <li>MAE: $127</li>
+                        <li>Analyzed 1,300+ models.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4 Modal -->
+    <div id="modal-project4" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>DS Job Salaries</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Analyzing the evolving data science job market to predict salaries based on role, location, and
+                        experience.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Aggregated data from job portals.</li>
+                        <li>Geographic and Role-based analysis.</li>
+                        <li>Salary prediction modeling.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>Dataset: 3,755 records.</li>
+                        <li>Prediction Accuracy: 87.3%</li>
+                        <li>MAE: $8,420</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 5 Modal -->
+    <div id="modal-project5" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>Supermarket Sales</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Uncovering customer behavior and sales patterns to optimize retail performance and inventory.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>RFM Analysis and Customer Segmentation.</li>
+                        <li>Time series analysis for seasonality.</li>
+                        <li>Product performance evaluation.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>Revenue Analyzed: $322k+</li>
+                        <li>Detected 23% higher spending by female customers.</li>
+                        <li>Identified 4 distinct customer segments.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 6 Modal -->
+    <div id="modal-project6" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>TCS Stock Live Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Real-time analysis and forecasting of TCS stock data for traders and analysts.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Live data processing pipeline.</li>
+                        <li>Moving Average Crossover strategies.</li>
+                        <li>Hybrid model: Linear Regression + LSTM.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>LSTM MAE: ~69.5</li>
+                        <li>Effective trend capture via Moving Averages.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 7 Modal -->
+    <div id="modal-project7" class="modal">
+        <div class="modal-content glass-panel">
+            <span class="close-modal">&times;</span>
+            <h2>AI Sales Prediction</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h3>Problem Statement</h3>
+                    <p>Comprehensive dashboard for real-time sales insights and forecasting across categories and
+                        locations.</p>
+                </div>
+                <div class="modal-section">
+                    <h3>Approach</h3>
+                    <ul class="modal-list">
+                        <li>Power BI ETL pipeline.</li>
+                        <li>Prophet-like time-series modeling.</li>
+                        <li>AI anomaly detection.</li>
+                    </ul>
+                </div>
+                <div class="modal-section">
+                    <h3>Key Metrics</h3>
+                    <ul class="modal-list">
+                        <li>Forecast Accuracy: 99.72%</li>
+                        <li>Revenue Forecast: +/- 1.5% variance.</li>
+                        <li>Identified Electronics as top category (27% share).</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
